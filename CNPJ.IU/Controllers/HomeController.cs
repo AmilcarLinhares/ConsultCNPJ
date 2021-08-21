@@ -23,7 +23,7 @@ namespace CNPJ.IU.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Consult()
         {
             return View();
         }
