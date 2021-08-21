@@ -1,4 +1,5 @@
-﻿using CNPJ.IU.Models;
+﻿using CNPJ.App.ViewModels;
+using CNPJ.IU.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -27,6 +28,13 @@ namespace CNPJ.IU.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult Consult(CnpjWsVM model)
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
