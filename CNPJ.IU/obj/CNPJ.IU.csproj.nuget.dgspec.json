@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Git\\Consult_CNPJ\\CNPJ.IU\\CNPJ.IU.csproj": {}
+    "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\CNPJ.IU.csproj": {}
   },
   "projects": {
-    "C:\\Git\\Consult_CNPJ\\CNPJ.App\\CNPJ.App.csproj": {
+    "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\Consult_CNPJ\\CNPJ.App\\CNPJ.App.csproj",
+        "projectUniqueName": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj",
         "projectName": "CNPJ.App",
-        "projectPath": "C:\\Git\\Consult_CNPJ\\CNPJ.App\\CNPJ.App.csproj",
+        "projectPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj",
         "packagesPath": "C:\\Users\\amilcar.lima\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\Consult_CNPJ\\CNPJ.App\\obj\\",
+        "outputPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -61,14 +61,14 @@
         }
       }
     },
-    "C:\\Git\\Consult_CNPJ\\CNPJ.IU\\CNPJ.IU.csproj": {
+    "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\CNPJ.IU.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\Consult_CNPJ\\CNPJ.IU\\CNPJ.IU.csproj",
+        "projectUniqueName": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\CNPJ.IU.csproj",
         "projectName": "CNPJ.IU",
-        "projectPath": "C:\\Git\\Consult_CNPJ\\CNPJ.IU\\CNPJ.IU.csproj",
+        "projectPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\CNPJ.IU.csproj",
         "packagesPath": "C:\\Users\\amilcar.lima\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\Consult_CNPJ\\CNPJ.IU\\obj\\",
+        "outputPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -88,8 +88,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Git\\Consult_CNPJ\\CNPJ.App\\CNPJ.App.csproj": {
-                "projectPath": "C:\\Git\\Consult_CNPJ\\CNPJ.App\\CNPJ.App.csproj"
+              "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj": {
+                "projectPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj"
               }
             }
           }

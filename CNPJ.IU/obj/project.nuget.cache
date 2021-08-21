@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d3fSu/4nZ981Fm1tdsxyeOXBPKPnUn1YDHP2XFev3HgqxL3q581FK7Ai3nsj6XkO6PuUBMfubC4wrIDL68yCdw==",
+  "dgSpecHash": "q8F7zQN5qUwgtFjfR690jB0a+qV6MnqV7DIJEKBBRKySIbta6hLUMZkMyvcUIp81yHKngsNWsKBiuWjUDkKqYA==",
   "success": true,
-  "projectFilePath": "C:\\Git\\Consult_CNPJ\\CNPJ.IU\\CNPJ.IU.csproj",
+  "projectFilePath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\CNPJ.IU.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amilcar.lima\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.9\\microsoft.aspnetcore.mvc.razor.extensions.5.0.9.nupkg.sha512",
     "C:\\Users\\amilcar.lima\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\5.0.9\\microsoft.aspnetcore.mvc.razor.runtimecompilation.5.0.9.nupkg.sha512",

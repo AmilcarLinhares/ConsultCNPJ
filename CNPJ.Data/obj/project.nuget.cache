@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7E4a84PNprMlCAT9xU4y0GbyRxOvobRb4SgzH18WHA8YxKdCl0cRCGMF7pTPiJIxUi6rJGKDNsCLOlit9AyD2g==",
+  "dgSpecHash": "ZFFuJJtvV2NArwwwmPkDNGbtX0vmVy2uA7ZI8con8suv5yZZ8EOBDLencUKY2mdTWHTXM42Za0xahKFgXDjC4Q==",
   "success": true,
-  "projectFilePath": "C:\\Git\\Consult_CNPJ\\CNPJ.Data\\CNPJ.Data.csproj",
+  "projectFilePath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Data\\CNPJ.Data.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
