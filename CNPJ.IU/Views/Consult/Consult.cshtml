@@ -1,0 +1,74 @@
+﻿@model CNPJ.App.ViewModels.CnpjWsVM
+
+@{
+    ViewData["Title"] = "Consulta";
+}
+<h1>Consulta CNPJ</h1>
+
+<form asp-controller="Home" asp-action="Consult" method="post">
+    @Html.AntiForgeryToken()
+    <div>
+        <input type="hidden" asp-for="QtCnpj" />
+
+        <div class="form-row">
+            <div>
+                <label class="control-label">
+                    CNPJ
+                    <button id="add-cnpj" type="button" class="btn btn-secondary btn-sm">+</button>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="limit" class="alert alert-danger col-sm-5" role="alert" style="display:none;">
+        Limite de de consulta de 10 CNPJs.
+    </div>
+
+    <div class="form-row">
+        <div id="divCnpj" class="col-sm-8">
+            @Html.Partial("Cnpj", Model)
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col-sm-12" style=" padding-top: 10px;">
+            <a asp-controller="Consult" asp-action="Search" class="btn btn-primary btn-sm">Pesquisar</a>
+        </div>
+    </div>
+    </div>
+</form>
+
+@section Scripts {
+    <script type="text/javascript">
+        var btnAddCnpj = document.querySelector("#add-cnpj");
+        btnAddCnpj.addEventListener("click", function () {
+            var qtCnpjOld = document.querySelector("#QtCnpj").value;
+
+            if (qtCnpjOld >= 10) {
+                document.getElementById("limit").style.display = "block";
+            }
+            else {
+                var qtCnpjNew = parseInt(qtCnpjOld) + 1;
+                document.getElementById("QtCnpj").value = qtCnpjNew;
+
+
+                var form = $("form");
+                var url = "@Url.Action("Cnpj", "Consult")";
+
+                $.ajax({
+                    url: url,
+                    data: form.serialize(),
+                    type: "get",
+                    cache: false,
+                    success: function (data) {
+                        $("#divCnpj").html(data);
+                    }
+                })
+            }
+
+        });
+
+
+    </script>
+}

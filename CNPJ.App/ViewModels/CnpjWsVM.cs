@@ -8,6 +8,7 @@ namespace CNPJ.App.ViewModels
 {
     public class CnpjWsVM
     {
-        public string Cnpj { get; set; }
+        public int QtCnpj { get; set; }
+        public List<CnpjVM> CnpjWsList { get; set; }
     }
 }

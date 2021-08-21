@@ -24,18 +24,6 @@ namespace CNPJ.IU.Controllers
             return View();
         }
 
-        public IActionResult Consult()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult Consult(CnpjWsVM model)
-        {
-            return View();
-        }
-
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
