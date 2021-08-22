@@ -1,5 +1,8 @@
 using CNPJ.App.AppServices;
+using CNPJ.App.AutoMapper;
 using CNPJ.App.Interfaces;
+using CNPJ.Domain.Interfaces;
+using CNPJ.Domain.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,6 +30,9 @@ namespace CNPJ.IU
         {
             services.AddControllersWithViews();
             services.AddScoped<IConsultAppService, ConsultAppService>();
+            services.AddScoped<ISearchCnpjWsAPIService, SearchCnpjWsAPIService>();
+
+            services.AddAutoMapperSetup();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

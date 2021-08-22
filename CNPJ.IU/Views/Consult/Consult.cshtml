@@ -5,7 +5,7 @@
 }
 <h1>Consulta CNPJ</h1>
 
-<form asp-controller="Home" asp-action="Consult" method="post">
+<form asp-controller="Consult" asp-action="Search" method="post">
     @Html.AntiForgeryToken()
     <div>
         <input type="hidden" asp-for="QtCnpj" />
@@ -30,17 +30,20 @@
             @Html.Partial("Cnpj", Model)
         </div>
     </div>
-
     <div class="form-row">
         <div class="col-sm-12" style=" padding-top: 10px;">
-            <a asp-controller="Consult" asp-action="Search" class="btn btn-primary btn-sm">Pesquisar</a>
+            <button type="submit" class="btn btn-primary btn-sm">Pesquisar</button>
         </div>
-    </div>
     </div>
 </form>
 
+
+
 @section Scripts {
     <script type="text/javascript">
+
+
+
         var btnAddCnpj = document.querySelector("#add-cnpj");
         btnAddCnpj.addEventListener("click", function () {
             var qtCnpjOld = document.querySelector("#QtCnpj").value;

@@ -1,12 +1,27 @@
-﻿using CNPJ.App.Interfaces;
+﻿using AutoMapper;
+using CNPJ.App.Interfaces;
 using CNPJ.App.ViewModels;
+using CNPJ.Domain.DTO;
+using CNPJ.Domain.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace CNPJ.App.AppServices
 {
     public class ConsultAppService : IConsultAppService
     {
+        private readonly ISearchCnpjWsAPIService _searchCnpjWsAPIService;
+        private readonly IMapper _mapper;
+
+        public ConsultAppService(
+            ISearchCnpjWsAPIService searchCnpjWsAPIService,
+            IMapper mapper)
+        {
+            this._searchCnpjWsAPIService = searchCnpjWsAPIService;
+            this._mapper = mapper;
+        }
+
         public CnpjWsVM Index()
         {
             var model = new CnpjWsVM
@@ -28,7 +43,7 @@ namespace CNPJ.App.AppServices
                 return model;
             }
 
-            var count = model.CnpjWsList.Count();
+            var count = model.CnpjWsList.Count;
             count++;
             for (int i = count; i <= model.QtCnpj; i++)
             {
@@ -39,10 +54,14 @@ namespace CNPJ.App.AppServices
             return model;
         }
 
-        public CnpjWsVM Search(CnpjWsVM model)
+        public async Task<List<ResponseApiWsVM>> Search(CnpjWsVM model)
         {
+            var modelDTO = _mapper.Map<List<CnpjVM>, List<CnpjApiDTO>>(model.CnpjWsList);
+            var modelApiDTO = await _searchCnpjWsAPIService.GetCnpjApiAsync(modelDTO);
 
-            return model;
+            var modelApiVM = _mapper.Map<List<ResponseApiWsDTO>,
+                                         List<ResponseApiWsVM>>(modelApiDTO);
+            return modelApiVM;
         }
 
     }

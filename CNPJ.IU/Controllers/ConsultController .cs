@@ -4,19 +4,17 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace CNPJ.IU.Controllers
 {
     public class ConsultController : Controller
     {
-        private readonly ILogger<ConsultController> _logger;
         private readonly IConsultAppService _consultAppService;
 
         public ConsultController(
-            ILogger<ConsultController> logger,
             IConsultAppService consultAppService)
         {
-            _logger = logger;
             this._consultAppService = consultAppService;
         }
 
@@ -35,12 +33,14 @@ namespace CNPJ.IU.Controllers
             return View(model);
         }
 
-        public IActionResult Search(CnpjWsVM model)
+        public async Task<IActionResult> Search(CnpjWsVM model)
         {
-            model = _consultAppService.Search(model);
+            var result = await _consultAppService.Search(model);
 
-            return View(model);
+            return View(result);
         }
+
+
 
     }
 }

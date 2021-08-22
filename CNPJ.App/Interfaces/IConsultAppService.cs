@@ -1,4 +1,6 @@
 ﻿using CNPJ.App.ViewModels;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace CNPJ.App.Interfaces
 {
@@ -6,6 +8,6 @@ namespace CNPJ.App.Interfaces
     {
         CnpjWsVM Index();
         CnpjWsVM AddCnpj(CnpjWsVM model);
-        CnpjWsVM Search(CnpjWsVM model);
+        Task<List<ResponseApiWsVM>> Search(CnpjWsVM model);
     }
 }
