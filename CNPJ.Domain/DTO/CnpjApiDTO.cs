@@ -10,5 +10,7 @@ namespace CNPJ.Domain.DTO
     {
         public int IdCnpjSearch { get; set; }
         public string CnpjSearch { get; set; }
+        public string Erro { get; set; }
+
     }
 }

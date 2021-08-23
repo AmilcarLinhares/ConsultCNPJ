@@ -8,46 +8,204 @@
 @foreach (var item in Model)
 {
     <div class="card mt-3">
+        @*Cabeçalho*@
         <div class="card-header">
-            <h5>Empresa: @item.Nome</h5>
-            <h6>CNPJ: @item.Cnpj</h6>
-        </div>
-        <div class="card-body">
-            @*1 Linha*@
             <div class="row">
-                <div class="col-sm-5">
-                    <b>Rua: </b>
-                    <p class="field">@item.Logradouro </p>
+                <div class=" col-md-9">
+                    <div class="row">
+                        <b>Empresa: @item.Nome</b>
+                    </div>
+                    <div class="row">
+                        <b>CNPJ: @item.Cnpj</b>
+                    </div>
                 </div>
-                <div class="col-sm-2">
-                    <b>Número: </b>
-                    <p class="field">@item.Numero </p>
-                </div>
-                <div class="col-sm-5">
-                    <b>Complemento: </b>
-                    <p class="field">@item.Complemento </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <b>Bairro: </b>
-                    <p class="field">@item.Bairro </p>
-                </div>
-                <div class="col-sm-4">
-                    <b>Municipio: </b>
-                    <p class="field">@item.Municipio </p>
-                </div>
-                <div class="col-sm-1">
-                    <b>UF: </b>
-                    <p class="field">@item.Uf </p>
-                </div>
-                <div class="col-sm-3">
-                    <b>CEP: </b>
-                    <p class="field">@item.Cep </p>
+                <div class="col-md-3">
+                    <div class="row">
+                        <b>Situação:</b>
+                    </div>
+                    <div class="row">
+                        @if (item.MsgErro == "OK")
+                        {
+                            <div class="text-primary">
+                                <p><strong>@item.Situacao</strong></p>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="text-danger">
+                                <p><strong>@item.MsgErro</strong></p>
+                            </div>
+                        }
+                    </div>
                 </div>
             </div>
         </div>
+        @if (item.MsgErro == "OK")
+        {
+    <div class="card-body">
+        @*1 Linha*@
+        <div class="text-left">
+            <b>Nome Fantasia: </b>
+            <p class="field">@item.Fantasia </p>
+        </div>
+        @*2 Linha*@
+        <div class="row">
+            <div class="col-sm-5">
+                <b>Rua: </b>
+                <p class="field">@item.Logradouro </p>
+            </div>
+            <div class="col-sm-2">
+                <b>Número: </b>
+                <p class="field">@item.Numero </p>
+            </div>
+            <div class="col-sm-5">
+                <b>Complemento: </b>
+                <p class="field">@item.Complemento </p>
+            </div>
+        </div>
+        @*3 Linha*@
+        <div class="row">
+            <div class="col-sm-4">
+                <b>Bairro: </b>
+                <p class="field">@item.Bairro </p>
+            </div>
+            <div class="col-sm-4">
+                <b>Municipio: </b>
+                <p class="field">@item.Municipio </p>
+            </div>
+            <div class="col-sm-1">
+                <b>UF: </b>
+                <p class="field">@item.Uf </p>
+            </div>
+            <div class="col-sm-3">
+                <b>CEP: </b>
+                <p class="field">@item.Cep </p>
+            </div>
+        </div>
+        @*4 Linha*@
+        <div class="row">
+            <div class="col-sm-6">
+                <b>Natureza Juridica: </b>
+                <p class="field">@item.natureza_juridica </p>
+            </div>
+            <div class="col-sm-2">
+                <b>Data Abertura: </b>
+                <p class="field">@item.Abertura </p>
+            </div>
+            <div class="col-sm-2">
+                <b>Porte: </b>
+                <p class="field">@item.Porte </p>
+            </div>
+            <div class="col-sm-2">
+                <b>Tipo: </b>
+                <p class="field">@item.Tipo </p>
+            </div>
+        </div>
+        @*5 Linha*@
+        @if (item.Email == null && item.Efr == null)
+        {
+            <div class="row">
+                @if (item.Email == null)
+                {
+                    <div class="col-sm-6">
+                        <b>E-mail: </b>
+                        <p class="field">@item.Email </p>
+                    </div>
+                }
+                @if (item.Efr == null)
+                {
+                    <div class="col-sm-6">
+                        <b>Ente Federativo Responsável: </b>
+                        <p class="field">@item.Efr </p>
+                    </div>
+                }
+            </div>
+        }
+        @*6 Linha*@
+        @if (item.MotivoSituacao != null && item.SituacaoEspecial != null)
+        {
+            <div class="row">
+                @if (item.MotivoSituacao != null)
+                {
+                    <div class="col-sm-3">
+                        <b>Motivo Situação: </b>
+                        <p class="field">@item.MotivoSituacao </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <b>Data Situação: </b>
+                        <p class="field">@item.DataSituacao </p>
+                    </div>
+                }
+                @if (item.SituacaoEspecial != null)
+                {
+                    <div class="col-sm-3">
+                        <b>Situação Especial: </b>
+                        <p class="field">@item.SituacaoEspecial </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <b>Data Situação Especial: </b>
+                        <p class="field">@item.DataSituacaoEspecial </p>
+                    </div>
+                }
+            </div>
+        }
+        @*7 Linha*@
+        <div class="row">
+            <div class="col-sm-4">
+                <b>Telefone: </b>
+                <p class="field">@item.Telefone </p>
+            </div>
+            <div class="col-sm-4">
+                <b>Capital Social: </b>
+                <p class="field">@item.capital_social</p>
+            </div>
+            <div class="col-sm-4">
+                <b>Ultima Atualização: </b>
+                <p class="field">@item.ultima_atualizacao</p>
+            </div>
+        </div>
+
+        @*Atividade Principal*@
+        <div class="text-left">
+            <b>Atividade Principal: </b>
+            @foreach (var p in item.atividade_principal)
+            {
+                <p class="field">@p.code - @p.text</p>
+            }
+        </div>
+
+        @*Atividades Secundarias*@
+        <div class="text-left">
+            <b>Atividades Secundarias: </b>
+            @foreach (var s in item.atividades_secundarias)
+            {
+                <p class="field">@s.code - @s.text</p>
+            }
+        </div>
+
+        @*Quadro Administrativo*@
+        <div class="text-left">
+            <b>Quadro Administrativo: </b>
+            @foreach (var qsa in item.qsa)
+            {
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p><strong>Nome: </strong>@qsa.Nome </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p><strong>Cargo: </strong>@qsa.qual</p>
+                    </div>
+                </div>
+            }
+        </div>
+
+        @*Botão*@
+        <a class="btn btn-primary btn-lg btn-block" href="javascript:save_Click(@item.Cnpj.Replace("/","").Replace(".","").Replace("-",""))" title="Detalhes" style="">Salvar</a>
     </div>
+        }
+    </div>
+
+
 }
 
 
@@ -55,7 +213,42 @@
 @section Scripts {
     <script type="text/javascript">
 
+        function save_Click(data) {
 
+            console.log(data);
+
+            $.ajax({
+                url: "@Url.Action("AddCnpj", "Consult")",
+                data: { cnpj: data },
+                type: "post",
+                cache: true,
+                success: function (data) {
+                    @*if (data == null)
+                    {
+                        @if (Model.CustomerId == null) {
+                            <text>
+                            window.close();
+                            </text>
+                        }
+                        else
+                        {
+                            <text>
+                            window.location = "@Url.Action("history", "technicalsupport", new { customerId = Model.CustomerId })";
+                            </text>
+                        }
+                    }
+                    else (data.filtersErrors != null)
+                    {
+                        var msgHtml = "<ul>"
+                        for (var i = 0; i < data.filtersErrors.length; i++) {
+                            msgHtml = msgHtml + "<li>" + data.filtersErrors[i].errorMessage + "</li>";
+                        }
+                        msgHtml = msgHtml + "</ul>";
+                        $(".field-validation-error").html(msgHtml);
+                    }*@
+                }
+            })
+        }
 
     </script>
 }

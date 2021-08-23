@@ -50,7 +50,7 @@ namespace CNPJ.Domain.DTO
         public string Abertura { get; set; } //":"31/01/1986",
 
         [JsonPropertyName("natureza_juridica")]
-        public string NaturezaJuridica { get; set; } //":"205-4 - Sociedade Anônima Fechada",
+        public string natureza_juridica { get; set; } //":"205-4 - Sociedade Anônima Fechada",
 
         [JsonPropertyName("fantasia")]
         public string Fantasia { get; set; } //":"TV/REDE/CANAIS/G2C+GLOBO SOMLIVRE GLOBO.COM GLOBOPLAY",
@@ -59,7 +59,7 @@ namespace CNPJ.Domain.DTO
         public string Cnpj { get; set; } //":"27.865.757/0001-02",
 
         [JsonPropertyName("ultima_atualizacao")]
-        public DateTime UltimaAtualizacao { get; set; } //":"2021-08-20T21:47:44.113Z",
+        public string ultima_atualizacao { get; set; } //":"2021-08-20T21:47:44.113Z",
 
         [JsonPropertyName("status")]
         public string Status { get; set; } //":"OK",
@@ -80,13 +80,13 @@ namespace CNPJ.Domain.DTO
         public string SituacaoEspecial { get; set; } //":"",
 
         [JsonPropertyName("data_situacao_especial")]
-        public DateTime DataSituacaoEspecial { get; set; } //":"",
+        public string DataSituacaoEspecial { get; set; } //":"",
 
         [JsonPropertyName("capital_social")]
-        public decimal CapitalSocial { get; set; } //":"6983568523.86",
+        public string capital_social { get; set; } //":"6983568523.86",
 
         [JsonPropertyName("data_situacao")]
-        public DateTime DataSituacao { get; set; } //":"03/11/2005",
+        public string DataSituacao { get; set; } //":"03/11/2005",
 
         [JsonPropertyName("tipo")]
         public string Tipo { get; set; } //":"MATRIZ",
@@ -103,6 +103,7 @@ namespace CNPJ.Domain.DTO
 
     public class ResponseApApiWsDTO // Atividade Principal
     {
+        public int Id { get; set; }
         public string text { get; set; } //"text":"Atividades de televisão aberta"
 
         public string code { get; set; } //"code":"60.21-7-00"
@@ -110,6 +111,7 @@ namespace CNPJ.Domain.DTO
 
     public class ResponseAsApiWsDTO // Atividade Secundaria
     {
+        public int Id { get; set; }
         public string text { get; set; } //"text":"Atividades de televisão aberta"
 
         public string code { get; set; } //"code":"60.21-7-00"
@@ -117,6 +119,7 @@ namespace CNPJ.Domain.DTO
 
     public class ResponseQsaApiWsDTO
     {
+        public int Id { get; set; }
         public string qual { get; set; } //qual":"10-Diretor",
 
         [JsonPropertyName("nome")]

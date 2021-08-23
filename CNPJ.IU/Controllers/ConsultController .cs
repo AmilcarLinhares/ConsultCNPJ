@@ -40,7 +40,25 @@ namespace CNPJ.IU.Controllers
             return View(result);
         }
 
+        [HttpPost]
+        public JsonResult AddCnpj(string cnpj)
+        {
+            var result = _consultAppService.AddDb(cnpj);
 
 
+
+
+
+            bool fsad = false;
+            if (fsad)
+            {
+                return new JsonResult(null);
+            }
+            else
+                return new JsonResult(null);
+        }
+
+
+        
     }
 }

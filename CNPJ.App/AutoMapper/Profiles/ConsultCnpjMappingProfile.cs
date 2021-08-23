@@ -12,12 +12,16 @@ namespace CNPJ.App.AutoMapper.Profiles
             CreateMap<CnpjVM, CnpjApiDTO>(MemberList.None);
 
             CreateMap<ResponseApiWsDTO,ResponseApiWsVM>(MemberList.None);
+            CreateMap<ResponseApiWsVM, ResponseApiWsDTO>(MemberList.None);
 
             CreateMap<ResponseApApiWsDTO, ResponseApApiWsVM>(MemberList.None);
+            CreateMap<ResponseApApiWsVM, ResponseApApiWsDTO>(MemberList.None);
 
             CreateMap<ResponseAsApiWsDTO, ResponseAsApiWsVM>(MemberList.None);
+            CreateMap<ResponseAsApiWsVM, ResponseAsApiWsDTO>(MemberList.None);
 
             CreateMap<ResponseQsaApiWsDTO, ResponseQsaApiWsVM>(MemberList.None);
+            CreateMap<ResponseQsaApiWsVM, ResponseQsaApiWsDTO>(MemberList.None);
 
         }
     }

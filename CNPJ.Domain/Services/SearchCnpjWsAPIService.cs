@@ -31,23 +31,33 @@ namespace CNPJ.Domain.Services
 
             for (int i = 0; i < model.Count; i++)
             {
-                
+
                 result.Add(new ResponseApiWsDTO(model[i].IdCnpjSearch));
 
-                HttpResponseMessage response = await _httpClient.GetAsync(model[i].CnpjSearch.ToString());
+                if (string.IsNullOrWhiteSpace(model[i].Erro))
+                {
+                    HttpResponseMessage response = await _httpClient.GetAsync(model[i].CnpjSearch.ToString());
 
-                if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized
-                    || response.StatusCode == System.Net.HttpStatusCode.NoContent
-                    || response.StatusCode == System.Net.HttpStatusCode.NotFound
-                    || (response.StatusCode != System.Net.HttpStatusCode.OK
-                    && response.StatusCode != System.Net.HttpStatusCode.BadRequest))
-                {
-                    result[i].MsgErro = "Falha de Comunicação com API.";
+                    if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized
+                        || response.StatusCode == System.Net.HttpStatusCode.NoContent
+                        || response.StatusCode == System.Net.HttpStatusCode.NotFound
+                        || (response.StatusCode != System.Net.HttpStatusCode.OK
+                        && response.StatusCode != System.Net.HttpStatusCode.BadRequest))
+                    {
+                        result[i].MsgErro = "Falha na API";
+                    }
+                    else
+                    {
+                        var stringResponse = await response.Content.ReadAsStringAsync();
+                        result[i] = JsonConvert.DeserializeObject<ResponseApiWsDTO>(stringResponse);
+                        if (result[i].Status == "OK")
+                            result[i].MsgErro = "OK";
+                    }
                 }
-                else
+                else 
                 {
-                    var stringResponse = await response.Content.ReadAsStringAsync();
-                    result[i] = JsonConvert.DeserializeObject<ResponseApiWsDTO>(stringResponse);
+                    result[i].Cnpj = model[i].CnpjSearch;
+                    result[i].MsgErro = model[i].Erro;
                 }
             }
 

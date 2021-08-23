@@ -11,10 +11,17 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.9" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CNPJ.App\CNPJ.App.csproj" />
+    <ProjectReference Include="..\CNPJ.Data\CNPJ.Data.csproj" />
+    <ProjectReference Include="..\CNPJ.Domain\CNPJ.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -5,14 +5,12 @@ using CNPJ.Domain.Interfaces;
 using CNPJ.Domain.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using CNPJ.Data.Context;
+using Microsoft.EntityFrameworkCore;
+using CNPJ.Data.Repositories;
 
 namespace CNPJ.IU
 {
@@ -31,8 +29,16 @@ namespace CNPJ.IU
             services.AddControllersWithViews();
             services.AddScoped<IConsultAppService, ConsultAppService>();
             services.AddScoped<ISearchCnpjWsAPIService, SearchCnpjWsAPIService>();
+            services.AddScoped<IAddDbService, AddDbService>();
+            services.AddScoped<IConsultCnpjRepository, ConsultCnpjRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             services.AddAutoMapperSetup();
+
+            var cs = 
+            services.AddDbContext<ConsultCnpjDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("ConsultCnpjDb")
+                , b => b.MigrationsAssembly("CNPJ.IU")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
