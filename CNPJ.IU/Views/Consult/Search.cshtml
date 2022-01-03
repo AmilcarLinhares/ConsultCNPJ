@@ -164,7 +164,6 @@
                 <p class="field">@item.ultima_atualizacao</p>
             </div>
         </div>
-
         @*Atividade Principal*@
         <div class="text-left">
             <b>Atividade Principal: </b>
@@ -173,7 +172,6 @@
                 <p class="field">@p.code - @p.text</p>
             }
         </div>
-
         @*Atividades Secundarias*@
         <div class="text-left">
             <b>Atividades Secundarias: </b>
@@ -182,7 +180,6 @@
                 <p class="field">@s.code - @s.text</p>
             }
         </div>
-
         @*Quadro Administrativo*@
         <div class="text-left">
             <b>Quadro Administrativo: </b>
@@ -223,29 +220,12 @@
                 type: "post",
                 cache: true,
                 success: function (data) {
-                    @*if (data == null)
-                    {
-                        @if (Model.CustomerId == null) {
-                            <text>
-                            window.close();
-                            </text>
-                        }
-                        else
-                        {
-                            <text>
-                            window.location = "@Url.Action("history", "technicalsupport", new { customerId = Model.CustomerId })";
-                            </text>
-                        }
-                    }
-                    else (data.filtersErrors != null)
-                    {
-                        var msgHtml = "<ul>"
-                        for (var i = 0; i < data.filtersErrors.length; i++) {
-                            msgHtml = msgHtml + "<li>" + data.filtersErrors[i].errorMessage + "</li>";
-                        }
-                        msgHtml = msgHtml + "</ul>";
-                        $(".field-validation-error").html(msgHtml);
-                    }*@
+
+                    if (data.cnpj = true)
+                        console.log('OK');
+                    else
+                        console.log('Erro');
+
                 }
             })
         }

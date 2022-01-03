@@ -29,38 +29,14 @@ namespace CNPJ.Domain.Services
             {
                 await _uow.BeginTransactionConsultCnpjAsync();
 
-                var resultEmpresa = await _consultCnpjRepository.AddEmpresaAsync(model);
+                var result = await _consultCnpjRepository.AddEmpresaAsync(model);
 
-                if (resultEmpresa)
-                {
-                    foreach (var qsa in model.qsa)
-                    {
-                        await _consultCnpjRepository.AddDiretorAsync(qsa);
-                    }
+                await _uow.SaveChangesConsultCnpjAsync();
+                await _uow.CommitConsultCnpjAsync();
 
-                    foreach (var ap in model.atividade_principal)
-                    {
-                        await _consultCnpjRepository.AddAtivPrincipalAsync(ap);
-                    }
-
-                    foreach (var se in model.atividades_secundarias)
-                    {
-                        await _consultCnpjRepository.AddAtivSecundariaAsync(se);
-                    }
-
-                    await _uow.SaveChangesConsultCnpjAsync();
-                    await _uow.CommitConsultCnpjAsync();
-                    
-                    return true;
-                }
-                else
-                {
-                    await _uow.RollbackConsultCnpjAsync();
-                    return false;
-                }
-
+                return result;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 await _uow.RollbackConsultCnpjAsync();
                 return false;

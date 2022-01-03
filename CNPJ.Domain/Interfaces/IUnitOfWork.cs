@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace CNPJ.Domain.Interfaces
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork :IDisposable
     {
         Task BeginTransactionConsultCnpjAsync();
         Task CommitConsultCnpjAsync();

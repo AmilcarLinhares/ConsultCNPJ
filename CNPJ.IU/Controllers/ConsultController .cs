@@ -41,24 +41,11 @@ namespace CNPJ.IU.Controllers
         }
 
         [HttpPost]
-        public JsonResult AddCnpj(string cnpj)
+        public async Task<JsonResult> AddCnpj(string cnpj)
         {
-            var result = _consultAppService.AddDb(cnpj);
+            var result = await _consultAppService.AddDb(cnpj);
 
-
-
-
-
-            bool fsad = false;
-            if (fsad)
-            {
-                return new JsonResult(null);
-            }
-            else
-                return new JsonResult(null);
+            return new JsonResult(new { Result = result });
         }
-
-
-        
     }
 }

@@ -65,8 +65,8 @@ namespace CNPJ.App.AppServices
             var modelDTO = _mapper.Map<List<CnpjVM>, List<CnpjApiDTO>>(model.CnpjWsList);
             var modelApiDTO = await _searchCnpjWsAPIService.GetCnpjApiAsync(modelDTO);
 
-            var modelApiVM = _mapper.Map<List<ResponseApiWsDTO>,
-                                         List<ResponseApiWsVM>>(modelApiDTO);
+            var modelApiVM = _mapper.Map<List<ResponseApiWsDTO>, List<ResponseApiWsVM>>(modelApiDTO);
+
             return modelApiVM;
         }
 

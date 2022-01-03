@@ -31,14 +31,14 @@ namespace CNPJ.IU
             services.AddScoped<ISearchCnpjWsAPIService, SearchCnpjWsAPIService>();
             services.AddScoped<IAddDbService, AddDbService>();
             services.AddScoped<IConsultCnpjRepository, ConsultCnpjRepository>();
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
 
             services.AddAutoMapperSetup();
 
             var cs = 
             services.AddDbContext<ConsultCnpjDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("ConsultCnpjDb")
-                , b => b.MigrationsAssembly("CNPJ.IU")));
+                , b => b.MigrationsAssembly("CNPJ.Data")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

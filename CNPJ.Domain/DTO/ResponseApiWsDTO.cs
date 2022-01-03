@@ -1,20 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
-using System.Threading.Tasks;
 
 namespace CNPJ.Domain.DTO
 {
     public class ResponseApiWsDTO
     {
-        public ResponseApiWsDTO(int id)
+        public ResponseApiWsDTO(int empresaId)
         {
-            Id = id;
+            EmpresaId = empresaId;
         }
         
-        public int Id { get; set; }
+        [Key]
+        public int EmpresaId { get; set; }
 
         public List<ResponseQsaApiWsDTO> qsa { get; set; }
 
@@ -103,7 +102,10 @@ namespace CNPJ.Domain.DTO
 
     public class ResponseApApiWsDTO // Atividade Principal
     {
-        public int Id { get; set; }
+        [Key]
+        public int ApId { get; set; }
+        [ForeignKey("EmpresaId")]
+        public int EmpresaId { get; set; }
         public string text { get; set; } //"text":"Atividades de televisão aberta"
 
         public string code { get; set; } //"code":"60.21-7-00"
@@ -111,19 +113,23 @@ namespace CNPJ.Domain.DTO
 
     public class ResponseAsApiWsDTO // Atividade Secundaria
     {
-        public int Id { get; set; }
+        [Key]
+        public int AsId { get; set; }
+        [ForeignKey("EmpresaId")]
+        public int EmpresaId { get; set; }
         public string text { get; set; } //"text":"Atividades de televisão aberta"
-
         public string code { get; set; } //"code":"60.21-7-00"
     }
 
     public class ResponseQsaApiWsDTO
     {
-        public int Id { get; set; }
+        [Key]
+        public int DiretorId { get; set; }
+        [ForeignKey("EmpresaId")]
+        public int EmpresaId { get; set; }
         public string qual { get; set; } //qual":"10-Diretor",
 
         [JsonPropertyName("nome")]
         public string Nome { get; set; } //"nome":"JORGE LUIZ DE BARROS NOBREGA"
     }
 }
-//27865757000102

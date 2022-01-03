@@ -6096,28 +6096,28 @@
       "CNPJ.Data >= 1.0.0",
       "CNPJ.Domain >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 5.0.9",
-      "Microsoft.EntityFrameworkCore.Design >= 5.0.9",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.9"
+      "Microsoft.EntityFrameworkCore.Design >= 5.0.9"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\amilcar.lima\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Dell\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\CNPJ.IU.csproj",
+      "projectUniqueName": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\CNPJ.IU.csproj",
       "projectName": "CNPJ.IU",
-      "projectPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\CNPJ.IU.csproj",
-      "packagesPath": "C:\\Users\\amilcar.lima\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\obj\\",
+      "projectPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\CNPJ.IU.csproj",
+      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\amilcar.lima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6131,14 +6131,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj": {
-              "projectPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj"
+            "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj": {
+              "projectPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj"
             },
-            "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Data\\CNPJ.Data.csproj": {
-              "projectPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Data\\CNPJ.Data.csproj"
+            "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Data\\CNPJ.Data.csproj": {
+              "projectPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Data\\CNPJ.Data.csproj"
             },
-            "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj": {
-              "projectPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj"
+            "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj": {
+              "projectPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj"
             }
           }
         }
@@ -6162,10 +6162,6 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[5.0.9, )"
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "[5.0.9, )"
           }
         },
         "imports": [
@@ -6186,7 +6182,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

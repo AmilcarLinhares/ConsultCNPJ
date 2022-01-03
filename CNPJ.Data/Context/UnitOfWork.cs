@@ -44,5 +44,8 @@ namespace CNPJ.Data.Context
             return await _consultCnpjDbContext.Database.GetDbConnection()
                 .QueryFirstAsync<DateTime>("select getdate()", transaction: _consultCnpjDbContext.Database.CurrentTransaction.GetTransaction());
         }
+
+        public void Dispose() =>
+            _consultCnpjDbContext.Dispose();
     }
 }

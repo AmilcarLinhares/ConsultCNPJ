@@ -48,23 +48,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\amilcar.lima\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Dell\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj",
       "projectName": "CNPJ.Domain",
-      "projectPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj",
-      "packagesPath": "C:\\Users\\amilcar.lima\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\obj\\",
+      "projectPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj",
+      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\amilcar.lima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -110,7 +111,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -9,9 +9,6 @@ namespace CNPJ.Domain.Interfaces
 {
     public interface IConsultCnpjRepository
     {
-        Task<bool> AddAtivPrincipalAsync(ResponseApApiWsDTO model);
-        Task<bool> AddAtivSecundariaAsync(ResponseAsApiWsDTO model);
-        Task<bool> AddDiretorAsync(ResponseQsaApiWsDTO model);
         Task<bool> AddEmpresaAsync(ResponseApiWsDTO model);
     }
 }

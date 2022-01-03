@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\CNPJ.IU.csproj": {}
+    "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\CNPJ.IU.csproj": {}
   },
   "projects": {
-    "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj": {
+    "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj",
         "projectName": "CNPJ.App",
-        "projectPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj",
-        "packagesPath": "C:\\Users\\amilcar.lima\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\obj\\",
+        "projectPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\amilcar.lima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,8 +32,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj": {
-                "projectPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj"
+              "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj": {
+                "projectPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj"
               }
             }
           }
@@ -71,24 +72,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Data\\CNPJ.Data.csproj": {
+    "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Data\\CNPJ.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Data\\CNPJ.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Data\\CNPJ.Data.csproj",
         "projectName": "CNPJ.Data",
-        "projectPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Data\\CNPJ.Data.csproj",
-        "packagesPath": "C:\\Users\\amilcar.lima\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Data\\obj\\",
+        "projectPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Data\\CNPJ.Data.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\amilcar.lima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -102,8 +104,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj": {
-                "projectPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj"
+              "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj": {
+                "projectPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj"
               }
             }
           }
@@ -158,24 +160,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj": {
+    "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj",
         "projectName": "CNPJ.Domain",
-        "projectPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj",
-        "packagesPath": "C:\\Users\\amilcar.lima\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\amilcar.lima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -221,24 +224,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\CNPJ.IU.csproj": {
+    "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\CNPJ.IU.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\CNPJ.IU.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\CNPJ.IU.csproj",
         "projectName": "CNPJ.IU",
-        "projectPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\CNPJ.IU.csproj",
-        "packagesPath": "C:\\Users\\amilcar.lima\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\obj\\",
+        "projectPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\CNPJ.IU.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.IU\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\amilcar.lima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -252,14 +256,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj": {
-                "projectPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj"
+              "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj": {
+                "projectPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.App\\CNPJ.App.csproj"
               },
-              "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Data\\CNPJ.Data.csproj": {
-                "projectPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Data\\CNPJ.Data.csproj"
+              "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Data\\CNPJ.Data.csproj": {
+                "projectPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Data\\CNPJ.Data.csproj"
               },
-              "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj": {
-                "projectPath": "C:\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj"
+              "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj": {
+                "projectPath": "C:\\Users\\Dell\\OneDrive\\Emprego\\3Con\\Projetos\\Git\\AmilcarLinhares\\ConsultCNPJ\\CNPJ.Domain\\CNPJ.Domain.csproj"
               }
             }
           }
@@ -283,10 +287,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.9, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[5.0.9, )"
             }
           },
           "imports": [
@@ -307,7 +307,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

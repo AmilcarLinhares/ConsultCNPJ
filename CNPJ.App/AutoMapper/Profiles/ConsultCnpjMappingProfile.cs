@@ -11,7 +11,7 @@ namespace CNPJ.App.AutoMapper.Profiles
         {
             CreateMap<CnpjVM, CnpjApiDTO>(MemberList.None);
 
-            CreateMap<ResponseApiWsDTO,ResponseApiWsVM>(MemberList.None);
+            CreateMap<ResponseApiWsDTO, ResponseApiWsVM>(MemberList.None);
             CreateMap<ResponseApiWsVM, ResponseApiWsDTO>(MemberList.None);
 
             CreateMap<ResponseApApiWsDTO, ResponseApApiWsVM>(MemberList.None);

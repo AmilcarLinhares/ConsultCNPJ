@@ -9,12 +9,12 @@ namespace CNPJ.App.ViewModels
 {
     public class ResponseApiWsVM
     {
-        public ResponseApiWsVM(int id)
+        public ResponseApiWsVM(int empresaId)
         {
-            Id = id;
+            EmpresaId = empresaId;
         }
         
-        public int Id { get; set; }
+        public int EmpresaId { get; set; }
 
         public List<ResponseQsaApiWsVM> qsa { get; set; }
 
@@ -123,4 +123,3 @@ namespace CNPJ.App.ViewModels
         public string Nome { get; set; } //"nome":"JORGE LUIZ DE BARROS NOBREGA"
     }
 }
-//27865757000102
